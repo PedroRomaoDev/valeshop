@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    # URL de conexão JDBC apontando para o localhost na porta padrão do Postgres (5432)
+    url: jdbc:postgresql://localhost:5432/valeshop_financeiro
+    username: postgres
+    password: rootpassword
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # 'update': o Hibernate cria/atualiza as tabelas no banco sozinho a partir das nossas classes Java
+      ddl-auto: update
+    show-sql: true # Mostra no terminal o comando SQL que o Hibernate executar
+    properties:
+      hibernate:
+        format_sql: true # Deixa o SQL do terminal formatado e legível
+
+server:
+  port: 8080 # Porta HTTP onde nossa API vai rodar
