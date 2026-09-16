@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <!-- 1. Versão do modelo do Maven (para o Maven 3/4, sempre é 4.0.0) -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 2. Herança (Parent): Traz todas as configurações e versões padrão do Spring Boot 3.4.3 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.3</version>
+        <relativePath/>
+    </parent>
+
+    <!-- 3. Identificação do nosso projeto (GAV: GroupId, ArtifactId, Version) -->
+    <groupId>com.valeshop</groupId>
+    <artifactId>financeiro</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>financeiro</name>
+    <description>API de Carteira Digital</description>
+
+    <!-- 4. Propriedades: aqui definimos a versão do Java que estamos usando -->
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
+    <!-- 5. Onde vão entrar as bibliotecas que o projeto usará (vazia por enquanto) -->
+    <dependencies>
+    </dependencies>
+
+</project>
